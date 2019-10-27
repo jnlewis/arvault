@@ -1,0 +1,42 @@
+{
+    "manifest": "arweave/paths",
+    "version": "0.1.0",
+    "index": {
+        "path": "index.html"
+    },
+    "paths": {
+        "index.html": {
+            "id": "6z1Ze-8pwut9aRl1I1xuBM7ahnfRei2aQTNoMKsxoCA"
+        },
+        "global.css": {
+            "id": "igoFsQ4b7mo08rrp4ppBCBOtS90vQVDq_5PLfwSQZQo"
+        },
+        "bundle.css": {
+            "id": "obmYPmvdL9VGaPXd0jBFNAEWS2FQu32vC0IjyT9NImI"
+        },
+        "bundle.js": {
+            "id": "ffcOANVWfiJUN9DbKMJkasYmO5PahqtIxvglGVDEgIU"
+        },
+        "favicon.png": {
+            "id": "NFtsCKnI1TjfoAhALCzcxdDvjG5x9dOcqmG6cUdbt6g"
+        },
+        "icon-192.png": {
+            "id": "5Z-WuoaGE250ExvlA3q7CVQNpLLX6QMHsBFXyYt8ZeA"
+        },
+        "icon-512.png": {
+            "id": "eoUxVqiN8NutmH5k2YtF1AIGxWIKWP-g3ivGzFM0IOU"
+        },
+        "ibm-plex-sans-400.woff2": {
+            "id": "V5gnJ-KF01z_qZPv2vtoS4yYbpAmayA4rPg-FNVYo_s"
+        },
+        "ibm-plex-sans-700.woff2": {
+            "id": "Icf6mtGY3rlavD4HDpxJ7X1BhfWAq_va_r6-Tla5CxM"
+        },
+        "sw.js": {
+            "id": "QfIOLOtmEGCbExlK3A4k2KlrhOPgSC5aapGkOVOG-RQ"
+        },
+        "manifest.json": {
+            "id": "_envAjhChhOyUiqQeq_99N8dMy3CbuNUAYRMWuYEV3E"
+        }
+    }
+}

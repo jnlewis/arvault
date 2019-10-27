@@ -1,0 +1,55 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+    	<meta charset="utf-8">
+        <meta name="robots" content="noindex">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+		<meta name="description" content="Arweave Vault – Password Manager on the Arweave Blockchain">
+
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-title" content="Arweave Vault">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="theme-color" content="#2b2b2b">
+
+        <link rel="preload" crossorigin as="font" type="font/woff2" href="ibm-plex-sans-400.woff2">
+        <link rel="preload" crossorigin as="font" type="font/woff2" href="ibm-plex-sans-700.woff2">
+
+        <link rel="stylesheet" href="global.css">
+        <link rel="stylesheet" href="bundle.css">
+
+        <link rel="manifest" href="manifest.json">
+
+        <link rel="icon" type="image/png" href="favicon.png">
+        <link rel="apple-touch-icon" sizes="192x192" href="icon-192.png">
+        <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png">
+
+        <title>Arweave Vault</title>
+    </head>
+
+    <body>
+        <div hidden>
+            <svg xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <symbol viewBox="0 0 384 384" id="icon-vault">
+                        <path d="m288 288h-224v-32h-64v96h352v-128h-64z"/>
+                        <path d="m0 96h64v-32h224v64h64v-128h-352z"/>
+                        <path d="m223.12 221.52c19.04-6.24 32.88-24.32 32.88-45.52s-13.84-39.28-32.88-45.52c-4.72-1.6-9.84-2.48-15.12-2.48-26.48 0-48 21.52-48 48s21.52 48 48 48c5.28 0 10.4-.88 15.12-2.48z"/>
+                        <path d="m0 96v32 128 32 96h384v-128-32-64-32-128h-384zm352 128h-32-32-8.72c5.496-9.512 8.72-20.424 8.72-32s-3.224-22.488-8.728-32h8.728 32 32zm-128-96c-35.288 0-64 28.712-64 64s28.712 64 64 64h64v32h-192v-32-128-32h192v32zm32 64c0 13.84-8.784 26.032-22 30.368-3.208 1.088-6.576 1.632-10 1.632-17.648 0-32-14.352-32-32s14.352-32 32-32c3.432 0 6.792.552 9.984 1.632l.16.048c13.072 4.288 21.856 16.472 21.856 30.32zm-224-160h320v96h-32v-64h-256v32h-32zm0 96h32v128h-32zm0 160h32v32h256v-64h32v96h-320z" fill="#007aff"/>
+                    </symbol>
+
+                    <symbol enable-background="new 0 0 512 512" viewBox="0 0 512 512" id="icon-lock">
+                        <path d="m256.001 276.673c-28.017 0-50.81 22.793-50.81 50.81 0 13.895 5.775 27.33 15.858 36.891v45.875c0 19.273 15.68 34.953 34.953 34.953s34.953-15.68 34.953-34.953v-45.875c10.078-9.555 15.857-22.993 15.857-36.891-.002-28.017-22.796-50.81-50.811-50.81zm17.978 69.885c-4.851 4.571-7.633 10.96-7.633 17.53v46.161c0 5.705-4.64 10.345-10.345 10.345-5.704 0-10.345-4.64-10.345-10.345v-46.161c0-6.569-2.782-12.957-7.63-17.527-5.307-5.003-8.229-11.778-8.229-19.078 0-14.447 11.755-26.202 26.202-26.202s26.202 11.755 26.202 26.202c.002 7.3-2.92 14.075-8.222 19.075z"/>
+                        <path d="m404.979 209.876h-36.908v-97.804c0-61.797-50.276-112.072-112.07-112.072-61.796 0-112.071 50.275-112.071 112.072v97.804h-36.909c-20.353 0-36.911 16.559-36.911 36.911v228.301c0 20.353 16.558 36.911 36.911 36.911h297.958c20.353 0 36.911-16.558 36.911-36.911v-228.3c0-20.353-16.558-36.912-36.911-36.912zm-236.443-97.804c0-48.227 39.236-87.464 87.464-87.464 48.227 0 87.463 39.237 87.463 87.464v97.804h-174.927zm248.747 363.017c0 6.784-5.52 12.304-12.304 12.304h-297.958c-6.784 0-12.304-5.519-12.304-12.304v-228.301c0-6.784 5.52-12.304 12.304-12.304h297.958c6.784 0 12.304 5.519 12.304 12.304z"/>
+                    </symbol>
+                </defs>
+            </svg>
+        </div>
+
+    	<script defer src="bundle.js"></script>
+
+        <script>
+            ('serviceWorker' in navigator) && navigator.serviceWorker.register('sw.js');
+        </script>
+    </body>
+</html>

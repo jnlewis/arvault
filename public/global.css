@@ -1,0 +1,218 @@
+@font-face {
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('IBM Plex Sans'), local('IBMPlexSans'), url(ibm-plex-sans-400.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local('IBM Plex Sans Bold'), local('IBMPlexSans-Bold'), url(ibm-plex-sans-700.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+:root {
+    --color-red: #dd4398;
+    --color-blue: #006eff;
+    --color-grey: #696b6c;
+    --color-green: #63b65c;
+    --color-white: #ffffff;
+    --color-orange: #fca854;
+
+    --color-page-text: #29333d;
+    --color-page-background: #fafcfe;
+    --color-header-slogan: #29333d;
+    --color-header-search: #e6eaed;
+    --color-header-placeholder: #696b6c;
+
+    --color-form-background: #ffffff;
+    --color-form-border: #e6eaed;
+    --color-form-shadow: rgba(230, 234, 237, 0.7);
+    --color-form-placeholder: #696b6c;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-page-text: #fff;
+        --color-page-background: #2b2b2b;
+        --color-header-slogan: #fff;
+        --color-header-search: #6e6f70;
+        --color-header-placeholder: #aaa;
+
+        --color-form-background: #242424;
+        --color-form-border: #525252;
+        --color-form-shadow: rgba(0, 4, 7, 0.7);
+        --color-form-placeholder: #666;
+    }
+}
+
+html, body, header, footer, a, p, blockquote, fieldset, input, button, main, div, hr, ul, li, h1 {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+body {
+    background: var(--color-page-background);
+}
+body, a, input, button {
+    color: var(--color-page-text);
+
+    font: 16px/24px 'IBM Plex Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h2 {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 400;
+}
+h3 {
+    color: var(--color-grey);
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+a {
+    color: var(--color-blue);
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Main container */
+.container {
+    margin: 0 auto;
+    padding: 16px;
+    max-width: 768px;
+    width: 100%;
+}
+
+/* Button */
+button {
+    background: none;
+    cursor: pointer;
+}
+.button {
+    height: 58px;
+    padding: 0 1rem;
+    display: inline-block;
+
+    color: var(--color-white);
+    background: var(--color-blue);
+    border-radius: 3px;
+
+    line-height: 53px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Input */
+input:required {
+    box-shadow: none;
+}
+
+/* Tooltip */
+.tooltip {
+    padding: 0 6px;
+    position: absolute;
+    background: var(--color-grey);
+    border-radius: 2px;
+    z-index: 1;
+
+    pointer-events: none;
+    transition: opacity .25s;
+
+    color: var(--color-white);
+    font-size: 11px;
+    line-height: 20px;
+}
+.tooltip::before {
+    top: -13px;
+    left: calc(50% - 10px);
+    width: 0;
+    height: 0;
+    z-index: -1;
+    content: '';
+    opacity: 1;
+    display: block;
+    position: absolute;
+
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent var(--color-grey);
+}
+
+/* Badge */
+.badge {
+    height: 24px;
+    padding: 0 8px;
+    display: block;
+    background: var(--color-grey);
+    border-radius: 3px;
+
+    color: var(--color-white);
+    font-size: 12px;
+    text-transform: lowercase;
+    white-space: nowrap;
+}
+.badge.active {
+    background: var(--color-blue);
+}
+
+/* Helpers */
+.display-flex {
+    display: flex;
+}
+.display-block {
+    display: block;
+}
+.display-none {
+    display: none;
+}
+
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.color-blue {
+    color: var(--color-blue);
+}
+.color-grey {
+    color: var(--color-grey);
+}
+.color-orange {
+    color: var(--color-orange);
+}
+.color-green {
+    color: var(--color-green);
+}
+.color-red {
+    color: var(--color-red);
+}
+
+[hidden] {
+    display: none !important;
+}
